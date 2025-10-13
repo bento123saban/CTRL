@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bendhard16.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="js/google.js" async defer></script>
+    <link rel="stylesheet" href="./font/fontawsome/css/all.css">
+</head>
+<body>
+    <div id="main-background" class="vw-100 vh-100"></div>
+
+    <div id="login" class="content grid-center dis-none">
+        <div class="login-box basic-glass grid-center p-30 borad-20 pt-4">
+            <img src="asset\image\image-removebg-preview.png" class="borad-10 w-50" alt="">
+            <h1 class="clr-white uppercase align-center m-0 mt-2">lorem ipsum dolor sit amet</h1>
+
+            <div class="hr white"></div>
+
+            <div id="g_id_onload"
+                data-client_id="795274958306-a5gs7djtrc92vhmntvpttekf75umcbm4.apps.googleusercontent.com"
+                data-context="signin"
+                data-ux_mode="popup"
+                data-callback="ben"
+                data-auto_prompt="false">
+            </div>
+            <div class="g_id_signin"
+                data-type="standard"
+                data-shape="pill"
+                data-theme="outline"
+                data-text="continue_with"
+                data-size="large"
+                data-logo_alignment="left"
+                data-width="200">
+            </div>
+        </div>
+    </div>
+
+
+    <div id="loader" class="grid-center content dis-none">
+        <div class="grid-center p-30 borad-20">
+            <div class="loader" id="the-loader"></div>
+            <span class="dis-block clr-white fz-10 mt-3 opacity-50" id="loader-text">loading</span>
+        </div>
+    </div>
+
+    <div id="alert" class="content grid-center">
+        <div class="alert-box basic-glass borad-10 p-0 hidden">
+            <h3 class="m-0 p-15 blue2">Bendhard</h3>
+            <div class="hr white m-0 w-100"></div>
+            <p class="p-15 align-justify clr-white m-0 fz-14">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod, perspiciatis quam?</p>
+            
+            <div class="hr white mh-15 w-30 dis-none"></div>
+            <div class="flex-start ph-15 mt-1 mb-2 gap-10 ">
+                <button class="p-10 blue2 borad-5 uppercase">OK</button>
+                <button class="p-10 red  borad-5 uppercase">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        function ben(response) {
+            console.log("Encoded JWT ID token: " + response.credential);
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,1 +1,54 @@
-Tes
+
+
+
+
+#main-background {
+    background: url("asset/image/landing PAGE.png") no-repeat fixed;
+    background-position: 20% center;
+    background-size: cover;
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.content {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    padding: 20px;
+}
+.basic-glass {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    border-bottom: 1.3px solid rgba(255, 255, 255, 0.3);
+    border-right: 1.3px solid rgba(255, 255, 255, 0.3);
+}
+
+
+.login-box h1 {
+    font-size: clamp(20px, 9vw, 50px);
+}
+.login-box img{
+    max-width: 100px;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#loader {
+    backdrop-filter: blur(5px);
+}
