@@ -34,6 +34,19 @@
     padding: 10px;
 }
 
+.add-groups {
+    mix-blend-mode: screen;
+}
+.add-groups label {
+    position: absolute;
+    top: 0;
+    left: 5px;
+    transform: translateY(calc(-50% - 2px));
+    color: white;
+    font-weight: bolder;
+    background-color: #000;
+    padding: 0 4px;
+}
 
 
 
@@ -47,8 +60,49 @@
 
 
 
+
+#alert button {
+    width: 80px;
+    border: .8px solid #ffffff80 !important;
+    padding: 7px;
+    font-size: 12px;
+    font-weight: bolder;
+}
 
 
 #loader {
     backdrop-filter: blur(5px);
+}
+
+#toast {
+    display: none;
+    opacity: 1;
+    backdrop-filter: blur(2px);
+    z-index: 1;
+}
+#toast.on {
+    display: block;
+    animation: toaster 2s ease forwards;
+}
+@keyframes toaster {
+    0% {
+        opacity: 1;
+    }
+    99% {
+        opacity: 0;
+        z-index: 1;
+    }
+    100% {
+        opacity: 0;
+        z-index: -3;
+    }
+}
+.toaster {
+    width: calc(100% - 20px);
+    padding: 7px;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+    border: 1px solid white !important;
+    border-radius: 4px;
 }

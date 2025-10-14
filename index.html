@@ -6,8 +6,10 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/bendhard16.min.css">
     <link rel="stylesheet" href="style.css">
-    <script src="js/google.js" async defer></script>
     <link rel="stylesheet" href="./font/fontawsome/css/all.css">
+
+    
+    <script src="js/google.js" async defer></script>
 </head>
 <body>
     <div id="main-background" class="vw-100 vh-100"></div>
@@ -38,6 +40,22 @@
         </div>
     </div>
 
+    <div id="add" class="content grid-center vh-100 w-100">
+        <div class="add-box basic-glass p-10 borad-20 w-100 h-100">
+            <div class="add-tabs flex-evenly gap-20">
+                <button class="blue2 p-10 borad-5  uppercase">Add Driver</button>
+                <button class="blue2 p-10 borad-5 uppercase opacity-30">Add Vehicle</button>
+            </div>
+            <div class="hr white w-50"></div>
+            <div class="form">
+                <div class="add-groups relative">
+                    <label for="fz-10">Nama</label>
+                    <input type="text" class="br-none p-5 w-100 borad-5 fz-18">
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <div id="loader" class="grid-center content dis-none">
         <div class="grid-center p-30 borad-20">
@@ -46,7 +64,7 @@
         </div>
     </div>
 
-    <div id="alert" class="content grid-center">
+    <div id="alert" class="content grid-center dis-none">
         <div class="alert-box basic-glass borad-10 p-0 hidden">
             <h3 class="m-0 p-15 blue2">Bendhard</h3>
             <div class="hr white m-0 w-100"></div>
@@ -54,13 +72,20 @@
             
             <div class="hr white mh-15 w-30 dis-none"></div>
             <div class="flex-start ph-15 mt-1 mb-2 gap-10 ">
-                <button class="p-10 blue2 borad-5 uppercase">OK</button>
-                <button class="p-10 red  borad-5 uppercase">Cancel</button>
+                <button class="blue2 borad-5 uppercase">OK</button>
+                <button class="white bolder borad-5 uppercase">Cancel</button>
+                <button class="red  borad-5 uppercase">No</button>
             </div>
         </div>
     </div>
 
+    <div id="toast" class="relative grid-center content dis-none">
+        <span class="toaster red">Lorem ipsum dolor sit amet</span>
+    </div>
 
+
+
+    <script src="js/app.js"></script>
     <script>
         function ben(response) {
             console.log("Encoded JWT ID token: " + response.credential);
