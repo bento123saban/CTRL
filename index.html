@@ -40,17 +40,67 @@
         </div>
     </div>
 
-    <div id="add" class="content grid-center vh-100 w-100">
-        <div class="add-box basic-glass p-10 borad-20 w-100 h-100">
-            <div class="add-tabs flex-evenly gap-20">
-                <button class="blue2 p-10 borad-5  uppercase">Add Driver</button>
-                <button class="blue2 p-10 borad-5 uppercase opacity-30">Add Vehicle</button>
+    <div id="add" class="content grid-center dis">
+        <div class="add-box basic-glass borad-20 w-100 hidden">
+            <div class="all-form  p-20 dis-none">
+                <div class="form m-0 dis-none" id="driver-form">
+                    <h1 class="clr-white align-center uppercase m-0 mb-2">Driver</h1>
+                    <div class="add-photo-box relative hidden red">
+                        <img src="" alt="">
+                        <span class="basic-glass grid-center"><i class="fas fa-camera clr-white"></i></span>
+                    </div>
+                    <input type="text" placeholder="NIP Driver" id="nip-driver">
+                    <input type="text" placeholder="Nama Driver" id="nama-river">
+                    <input type="text" placeholder="Peleton" id="peleton-driver">
+                    <input type="text" placeholder="Password" id="password-driver">
+                    <input type="text" placeholder="Ulangi Password" id="password2-driver">
+                </div>
+
+                <div class="form m-0 dis-none" id="admin-form">
+                    <h1 class="clr-white align-center uppercase m-0 mb-2">Admin</h1>
+                    <div class="add-photo-box relative hidden red">
+                        <img src="" alt="">
+                        <span class="basic-glass grid-center"><i class="fas fa-camera clr-white"></i></span>
+                    </div>
+                    <input type="text" placeholder="NIP Driver" id="nip-admin">
+                    <input type="text" placeholder="Nama Driver" id="nama-admin">
+                    <input type="text" placeholder="Password" id="password-admin">
+                    <input type="text" placeholder="Ulangi Password" id="password2-admin">
+                </div>
+
+                <div class="form m-0" id="driver-form">
+                    <h2 class="clr-white align-center uppercase m-0 mb-2">Kendaraan</h2>
+                    <div class="add-photo-box relative hidden red">
+                        <img src="" alt="">
+                        <span class="basic-glass grid-center"><i class="fas fa-camera clr-white"></i></span>
+                    </div>
+                    <input type="text" placeholder="Kode Kendaraan" id="kode-kendaraan">
+                    <input type="text" placeholder="Nama Kendaraan" id="nama-kendaraan">
+                    <input type="text" placeholder="No. Polisi" id="nopol-kendaraan">
+                    <input type="text" placeholder="Quota Bulanan" id="quota-kendaraan">
+                    <input type="text" placeholder="Limit Harian" id="limit-harian">
+                    <input type="text" placeholder="Limit Mingguan" id="limit-mingguan">
+                </div>
+                <div class="hr white mt-2 mb-2 w-50 p-0"></div>
+                <button class="blue2 p-10 w-100 borad-10 uppercase bolder add-submit m-0">SUBMIT</button>
             </div>
-            <div class="hr white w-50"></div>
-            <div class="form">
-                <div class="add-groups relative">
-                    <label for="fz-10">Nama</label>
-                    <input type="text" class="br-none p-5 w-100 borad-5 fz-18">
+            <div id="add-capture" class="h-100 p-0 m-0 hidden">
+                <div id="capture-set" class="h-100 dis-none">
+                    <video src="" id="capture-video" class=""></video>
+                    <div class="capture-buttons flex-center gap-20 absolute-bottom w-100 pb-3">
+                        <button class="blue2"><i class="fas fa-camera-rotate"></i></button>
+                        <button class="blue2"><i class="fas fa-image"></i></button>
+                        <button class="blue2"><i class="fas fa-x"></i></button>
+                    </div>
+                </div>
+                <div class="capture-preview dis-noe relative h-100 grid-center p-20">
+                    <div class="capture-prev-box relative borad-20 basic-glass hidden">
+                        <img src="" id="capture-preview-image" alt="">
+                    </div>
+                    <div class="preview-buttons flex-center gap-20 absolute-bottom mb-5 p-0 w-100">
+                        <button class="basic-glass red"><i class="fas fa-x"></i></button>
+                        <button class="basic-glass blue2"><i class="fas fa-check"></i></button>
+                    </div>
                 </div>
             </div>
         </div>

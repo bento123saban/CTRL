@@ -331,6 +331,8 @@ input::-webkit-inner-spin-button {
     color: white !important;
     border: none !important;
 }
+.br-blue2 {border-color:  rgb(1, 63, 251) !important;}
+
 .color-ready, .clr-blue, [data-color="blue"] { color: #008CCC !important;}
 .br-ready, .br-blue{border-color: deepskyblue !important;}
 
@@ -414,6 +416,8 @@ input::-webkit-inner-spin-button {
 .br-fuin, .br-grey, .br-gray {border-color: grey !important;}
 
 .br-none {border: none !important;}
+
+.outline-none {outline: none !important;}
 
 .bold {font-weight: bold;}
 .bolder {font-weight: bolder;}
